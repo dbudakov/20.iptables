@@ -6,7 +6,7 @@
 |DROP when not needed  |other types |  
 
 
-Action |Types (Codes)
+:Action |:Types (Codes)
 |---|---|
 ALLOW |1, 2, 3 (0), 4 (1,2), 128, 129
 Consider allowing | 3 (1), 4 (0), 144-147
