@@ -6,8 +6,8 @@
 |DROP when not needed  |other types |  
 
 
-:Action |:Types (Codes)
-|---|---|
+Action |Types (Codes)
+|:---|:---|
 ALLOW |1, 2, 3 (0), 4 (1,2), 128, 129
 Consider allowing | 3 (1), 4 (0), 144-147
 Policy dependent | 15, 5-99, 102-126 154-199, 202-254
