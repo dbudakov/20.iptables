@@ -35,5 +35,9 @@ centralRouter: ip route add 192.168.11.0/24 via 192.168.155.1
 inetRouter2: "iptables -A PREROUTING -i eth2 -t nat -p tcp -m tcp --dport 8080 -j DNAT --to-destination 192.168.155.2:80" 
 centralRouter: "iptables -A PREROUTING -i eth2 -t nat -p tcp -m tcp --dport 80 -j DNAT --to-destination 192.168.101.2:80"
 ```
-
+### 5 Задание
+Доступ в интернет осуществляется через inetRouter, для сохранения настроек `iptable` устанавливается утилита `iptables-services` и сохраняются настройки `iptables` в дефолтный файл настроек `/etc/sysconfig/iptables`, при перезагрузке \*Router будут перечитывать данный файл   
+```
+iptables-save > /etc/sysconfig/iptables
+```
 
