@@ -21,7 +21,7 @@
 ВНИМАНИЕ: `knock port` настроен на цепочки `DROP` поэтому ответа при подключении по ssh, `без стука`, не будет, необходимо прожимать ^C  
 ```
 vagrant ssh centralRouter
-## далее с centralROuter
+## далее с centralRouter
 /bin/bash /vagrant/knock.sh 192.168.255.1 8881 7777 9991
 ssh vagrant@192.168.255.1
 ```
