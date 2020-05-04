@@ -12,7 +12,7 @@
 * реализовать проход на 80й порт без маскарадинга    
   
 ## Решение  
-![logo](https://github.com/dbudakov/20.iptables/blob/master/homework/iptables.jpg)
+![](https://github.com/dbudakov/20.iptables/blob/master/homework/iptables.jpg)
 
 ### 1 Задание 
 Выполнено с использованием ansible, стренд поднимается по команде `vagrant up` из каталога `homework`  
@@ -38,7 +38,7 @@ inetRouter2: "iptables -A PREROUTING -i eth2 -t nat -p tcp -m tcp --dport 8080 -
 centralRouter: "iptables -A PREROUTING -i eth2 -t nat -p tcp -m tcp --dport 80 -j DNAT --to-destination 192.168.101.2:80"
 ```
 ### 5 Задание
-Доступ в интернет осуществляется через inetRouter, для сохранения настроек `iptable` устанавливается утилита `iptables-services` и сохраняются настройки `iptables` в дефолтный файл настроек `/etc/sysconfig/iptables`, при перезагрузке \*Router будут перечитывать данный файл   
+Доступ в интернет осуществляется через inetRouter, для сохранения настроек `iptables` устанавливается утилита `iptables-services`, настройки сохраняются в дефолтный файл `/etc/sysconfig/iptables`, при перезагрузке данный файл будет перечитан
 ```
 iptables-save > /etc/sysconfig/iptables
 ```
