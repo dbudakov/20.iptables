@@ -12,7 +12,7 @@
 * реализовать проход на 80й порт без маскарадинга    
   
 ## Решение  
-[logo](https://github.com/dbudakov/20.iptables/blob/master/homework/iptables.jpg)
+![logo](https://github.com/dbudakov/20.iptables/blob/master/homework/iptables.jpg)
 
 ### 1 Задание 
 Выполнено с использованием ansible, стренд поднимается по команде `vagrant up` из каталога `homework`  
