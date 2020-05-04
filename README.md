@@ -12,6 +12,8 @@
 * реализовать проход на 80й порт без маскарадинга    
   
 ## Решение  
+[logo](https://github.com/dbudakov/20.iptables/blob/master/homework/iptables.jpg)
+
 ### 1 Задание 
 Выполнено с использованием ansible, стренд поднимается по команде `vagrant up` из каталога `homework`  
 После поднятия стенда, `inetRouter` будет доступен для подключения по `ssh`, только после предварительного запуска knock.sh, который лежит на `centralRouter` по пути `/vagrant/knock.sh`, поэтому для проверки `knocking port`, нужно   
